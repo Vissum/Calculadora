@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Calculadora</string>
+
+        <string name="suma">Suma</string>
+        <string name="resta">Resta</string>
+        <string name="multiplicacion">Suma</string>
+        <string name="division">Resta</string>
+    <string name="calculate_button_text">Calcular</string>
+    <string name="button_calculate_text">Calcular</string>
+    <string name="calcular">Calcular</string>
+    <string name="n_mero_1">Número 1</string>
+    <string name="n_mero_2">Número 2</string>
+    <string name="result_text">Resultado: %s</string>
+
+
+
+</resources>

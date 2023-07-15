@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculadora"
+        android:textSize="30sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        tools:ignore="HardcodedText,TextSizeCheck" />
+
+    <RadioButton
+        android:id="@+id/radioButtonOption1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="104dp"
+        android:text="@string/suma"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewTitle"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <RadioButton
+        android:id="@+id/radioButtonOption2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="56dp"
+        android:text="@string/resta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewTitle"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/division"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radioButtonOption1"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="16dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/multiplicacion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radioButtonOption1"
+        android:layout_marginEnd="56dp"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/editTextNumber1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:hint="@string/n_mero_1"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        app:layout_constraintEnd_toEndOf="@id/radioButtonOption2"
+        app:layout_constraintStart_toStartOf="@id/radioButtonOption1"
+        app:layout_constraintTop_toBottomOf="@id/radioButton" />
+
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:autofillHints=""
+        android:hint="@string/n_mero_2"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        app:layout_constraintEnd_toEndOf="@id/radioButtonOption2"
+        app:layout_constraintStart_toStartOf="@id/radioButtonOption1"
+        app:layout_constraintTop_toBottomOf="@id/editTextNumber1" />
+
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_calculate_text"
+        app:layout_constraintTop_toBottomOf="@id/editTextNumber2"
+        app:layout_constraintStart_toStartOf="@id/radioButtonOption1"
+        app:layout_constraintEnd_toEndOf="@id/radioButtonOption2"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/buttonCalculate"
+        app:layout_constraintStart_toStartOf="@id/radioButtonOption1"
+        app:layout_constraintEnd_toEndOf="@id/radioButtonOption2"
+        android:layout_marginTop="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
